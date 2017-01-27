@@ -1,10 +1,10 @@
 <?php
 class User {
 
-	private $username;
-	private $mail;
-	private $password;
-	private $_valid;
+	public $username;
+	public $mail;
+	public $password;
+	public $_valid;
 
     function __construct($params) {
 		if(isset($params['username']) and isset($params['mail']) and isset($params['password']))
@@ -24,7 +24,7 @@ class User {
 		}
 		else
 		{
-			require_once '/db/handler.php';
+			require_once 'db/handler.php';
 			$db = new Handler();
 			$comando = 'INSERT INTO user (username,mail,password) VALUES ';
 			$comando .= '("'.$this->username.'","'.$this->mail.'","'.$this->password.'")';

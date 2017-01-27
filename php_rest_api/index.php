@@ -1,6 +1,6 @@
 <?php
 	header('Content-Type:application/json');
-	require '/api/Api.php';
+	require 'api/Api.php';
 	
 	//echo "<h1>Hello api :)</h1>";
 	

@@ -11,7 +11,7 @@ class ConfigDB {
 
     function __construct() { 
 		$this->username = 'root';
-		$this->password = '';
+		$this->password = '123456';
 		$this->host = 'localhost';
 		$this->db_name = 'prueba';  	
     }
